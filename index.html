@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+		<title>Frontend Mentor | Interactive rating component</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<main class="rating">
+			<article class="rating__container">
+				<div class="rating__icon">
+					<picture>
+						<source srcset="./images/icon-star.svg" />
+						<img src="./images/icon-star.svg" alt="icon-star" />
+					</picture>
+				</div>
+
+				<h1 id="rating-heading">How did we do?</h1>
+
+				<p class="rating__message">
+					Please let us know how we did with your support request. All feedback
+					is appreciated to help us improve our offering!
+				</p>
+
+				<ul class="rating__score">
+					<li class="score">1</li>
+					<li class="score">2</li>
+					<li class="score">3</li>
+					<li class="score">4</li>
+					<li class="score">5</li>
+				</ul>
+
+				<button class="cta-submit" type="submit">submit</button>
+			</article>
+			<article class="rating__container rating__container--result hide">
+				<picture>
+					<source src="./images/illustration-thank-you.svg" />
+					<img src="./images/illustration-thank-you.svg" alt="thank you image" />
+				</picture>
+
+				<p class="rating__user"><span id="userScore"></span></p>
+
+				<h2>Thank you!</h2>
+
+				<p class="rating__message">
+					We appreciate you taking the time to give a rating. If you ever need
+					more support, don’t hesitate to get in touch!
+				</p>
+			</article>
+		</main>
+		<script src="./index.js"></script>
+	</body>
+</html>
